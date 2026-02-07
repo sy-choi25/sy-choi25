@@ -1,10 +1,10 @@
 <div align="center">
 
 <!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E3192,100:1BFFFF&height=200&section=header&text=Hi%20There!%20I'm%20SY%20👋&fontSize=50&fontAlignY=35&animation=twinkling&fontColor=fff" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E3192,100:1BFFFF&height=200&section=header&text=Hi%20There!%20I'm%20최소영%20&fontSize=50&fontAlignY=35&animation=twinkling&fontColor=fff" />
 
 <!-- Typing SVG -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&color=1BFFFF&center=true&vCenter=true&lines=AI+Engineer;RAG+Developer;Full+Stack" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&color=2a5298&center=true&vCenter=true&lines=AI+Engineer;RAG+Developer;Full+Stack" alt="Typing SVG" /></a>
 
 <br/>
 
@@ -16,7 +16,7 @@
 
 ---
 
-<div align="center">
+<div align="left">
 
 ### 🌟 About Me 🌟
 
@@ -173,57 +173,29 @@ const SY = {
 
 **작업 내용**:
 
-**RAG 파이프라인 구축 (전체 설계 및 구현)**
-- 7가지 데이터 타입 통합 벡터화 (announcement, stat, space, law, cases, program, ip_manual)
-- 문서 타입별 차별화 청킹 전략 설계
-  - announcement: 400 chars, overlap 80
-  - law: 700 chars, overlap 120 (조문 단위 유지)
-  - space: 200 chars, overlap 30 (짧고 명확)
-- ChromaDB 벡터 스토어 구축 및 임베딩 (OpenAI text-embedding-3-small)
+**RAG 파이프라인 구축**
 - Query Transformation 구현 (대화 히스토리 기반 질문 재구성)
 - Multi-Query RAG 개발 (1개 질문 → 3개 다양한 쿼리 생성)
-- 질문 유형별 프롬프트 자동 라우팅 (recommend / law / rag)
 - Tavily API 연동 웹 검색 Fallback 시스템
 
 **Backend 개발 (Django + FastAPI)**
 - Django 프로젝트 구조 설계 및 앱 생성
-- MySQL 데이터베이스 스키마 설계
-  - users, chat_sessions, chat_log, calendar_events, business_plans 테이블
 - Django ORM 모델 구현 및 마이그레이션
 - FastAPI 비동기 API 서버 구축 (RAG 엔진)
 - RESTful API 엔드포인트 개발
   - 채팅: `/api/chat`, `/api/history`
   - 캘린더: `/api/calendar/events`, `/api/calendar/toggle`, `/api/calendar/delete`
-  - 사업계획서: `/api/business-plan/analyze`, CRUD 엔드포인트
 - Django + FastAPI 마이크로서비스 통신 구조 구축
-- 사용자 인증 및 세션 관리 (Django Auth)
 
 **Frontend 개발 (Django Templates + Vanilla JS)**
-- 채팅 인터페이스 구현
-  - 실시간 메시지 렌더링 (말풍선 UI)
-  - 출처 배지 표시 (📚 내부 문서 / 🌐 웹 검색 / 💭 AI 지식)
-  - 로딩 애니메이션 (타이핑 인디케이터)
-  - 일정 자동 추출 팝업 모달
 - **월간 캘린더 시스템 전체 구현**
   - 42칸 그리드 레이아웃 (6주 표시)
   - D-Day 자동 계산 및 색상 시각화
-    - D-3 이하: 🔴 빨강 (긴급)
-    - D-7 이하: 🟡 노랑 (주의)
-    - D-7 초과: 🟢 초록 (여유)
   - 일정 CRUD 인터랙션 (추가/완료/삭제)
   - 월 이동 네비게이션 (이전/다음/오늘)
   - 다가오는 일정 리스트 렌더링
-- 사업계획서 관리 페이지
-  - 목록 뷰 (카드형 레이아웃)
-  - 작성 폼 (멀티 섹션)
-  - 상세 뷰 (편집 가능)
-  - AI 분석 결과 탭 UI (단기/중기/장기 로드맵)
-- 마이페이지 대시보드 (통계 카드, 빠른 액션)
 
 **AI 분석 시스템 개발**
-- 사업계획서 분석 프롬프트 엔지니어링 (20년 경력 벤처투자 전문가 페르소나)
-- 5개 점수 계산 알고리즘 (투자매력도, 시장성, 실현가능성, 차별성, 완성도)
-- 8개 섹션 구조화 (시장 동향, 실현 가능성, 강점, 약점, 리스크, 개선 제안, 종합 의견)
 - 일정 자동 추출 로직
   - 답변 텍스트에서 날짜 패턴 정규식 감지
   - 과거 날짜 필터링
@@ -240,7 +212,6 @@ const SY = {
 **데이터 수집 및 전처리**
 - K-Startup API 데이터 수집 스크립트 작성
 - PDF 문서 파싱 (PyMuPDF)
-- 텍스트 청킹 및 전처리 파이프라인 구축
 
 **성과**:
 - ✅ 검색 정확도 92.8% 달성 (목표 90% 초과)
@@ -251,15 +222,6 @@ const SY = {
 
 **내가 해결한 문제**:
 ```python
-# Problem: RAG 검색 정확도 부족 (초기 60% 수준)
-# Solution: 문서 타입별 청킹 최적화
-- 기존: 모든 문서 동일 크기 (1000 chars)
-- 개선: 문서 특성에 맞게 차별화
-  - announcement: 400 chars (중간)
-  - law: 700 chars (긴 조문 유지)
-  - space: 200 chars (짧고 명확)
-→ 검색 정확도 60% → 92.8% (32% 향상)
-
 # Problem: 사용자 질문이 애매하면 엉뚱한 답변
 # Solution: Query Transformation + Multi-Query
 - 대화 히스토리 기반 질문 재구성
@@ -286,13 +248,6 @@ const SY = {
 - 과거 날짜 필터링 (현재 날짜 기준)
 - D-Day 계산 로직 및 색상 매핑
 → 정확한 일정 추출 및 시각화
-
-# Problem: API 응답 속도 느림 (초기 7초)
-# Solution: 벡터 검색 최적화
-- Top-K 파라미터 조정 (30 → 10)
-- 프롬프트 길이 단축 (불필요한 설명 제거)
-- LLM 호출 최소화 (캐싱 활용)
-→ 평균 응답 시간 4.42초로 개선
 
 # Problem: Hallucination (근거 없는 답변)
 # Solution: 프롬프트 제약 조건 명시
@@ -330,14 +285,6 @@ const SY = {
     "서울시 기술창업 프로그램"
 ]
 → 재현율 30% 향상
-```
-
-**문서 타입별 청킹 최적화**
-```
-announcement: 400 chars (문맥 연결 중요)
-law: 700 chars (조문 단위 유지)
-space: 200 chars (짧고 명확)
-→ 검색 정확도 +32%
 ```
 
 ---
