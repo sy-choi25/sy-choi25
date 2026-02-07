@@ -3,7 +3,9 @@
 <!-- Animated Header -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hi%20There!%20I'm%20SY%20👋&fontSize=50&fontAlignY=35&animation=twinkling&fontColor=fff" />
 
+
 <!-- Typing SVG -->
+
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=F75C7E&center=true&vCenter=true&random=false&width=700&lines=AI+%26+Machine+Learning+Enthusiast+🤖;RAG+System+Developer+💬;Full+Stack+AI+Engineer+🚀;From+Non-CS+to+AI+Professional+💪;Building+Real-World+AI+Solutions+✨" alt="Typing SVG" /></a>
 
 <br/>
