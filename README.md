@@ -325,16 +325,92 @@ space: 200 chars (짧고 명확)
 
 </div>
 
-| 단계 | 학습 내용 | 주요 성과 |
-|------|-----------|-----------|
-| **Phase 1** | Python 기초 | 변수, 조건문, 반복문, 함수, 클래스 |
-| **Phase 2** | Pandas & 데이터 분석 | DataFrame, 시각화, 통계 분석 |
-| **Phase 3** | Machine Learning | 지도/비지도 학습, 모델 평가 |
-| **Phase 4** | Deep Learning | CNN, RNN, PyTorch, TensorFlow |
-| **Phase 5** | LLM & RAG | Prompt Engineering, LangChain, Vector DB |
-| **Phase 6** | RAG 챗봇 프로젝트 | 창업 정책 안내 챗봇 (107 Commits) |
-| **Phase 7** | Full Stack RAG | Boss Baby AI (51 Commits) |
-| **Phase 8** | Production AI | AI-ARCADE (227 Commits) |
+### 📖 학습 단계별 정리
+
+<details>
+<summary><b>1️⃣ Python Fundamentals</b></summary>
+
+**학습 내용**:
+- 변수, 자료형, 조건문, 반복문
+- 함수, 클래스, 모듈
+- 파일 입출력, 예외처리
+
+**실습 프로젝트**:
+- 계산기, TODO 리스트
+- 파일 관리 시스템
+</details>
+
+<details>
+<summary><b>2️⃣ Pandas & Data Analysis</b></summary>
+
+**학습 내용**:
+- DataFrame 생성 및 조작
+- 데이터 필터링, 정렬, 그룹화
+- 시각화 (Matplotlib, Seaborn)
+
+**실습 프로젝트**:
+- CSV 데이터 분석
+- 통계 분석 및 시각화
+</details>
+
+<details>
+<summary><b>3️⃣ Machine Learning</b></summary>
+
+**학습 내용**:
+- 지도학습: Linear Regression, Decision Tree, Random Forest
+- 비지도학습: K-Means, PCA
+- 모델 평가: Cross Validation, Confusion Matrix
+
+**실습 프로젝트**:
+- 고객 이탈 예측
+- 부동산 가격 예측
+</details>
+
+<details>
+<summary><b>4️⃣ Deep Learning</b></summary>
+
+**학습 내용**:
+- Neural Network 기초
+- CNN (이미지 분류)
+- RNN, LSTM (시계열 분석)
+- PyTorch, TensorFlow
+
+**실습 프로젝트**:
+- MNIST 손글씨 인식
+- 이미지 분류 모델
+</details>
+
+<details>
+<summary><b>5️⃣ LLM & RAG</b></summary>
+
+**학습 내용**:
+- LLM 기초 (GPT, Llama)
+- Prompt Engineering
+- RAG 파이프라인
+- LangChain, LangGraph
+- Vector Database (ChromaDB, FAISS)
+
+**실습 프로젝트**:
+- 챗봇 구현
+- RAG 시스템 구축
+- **→ 3개의 Production-Ready 프로젝트로 이어짐!**
+</details>
+
+<details>
+<summary><b>6️⃣ Backend & Full Stack</b></summary>
+
+**학습 내용**:
+- Django (MVT 패턴)
+- FastAPI (비동기 API)
+- Vue.js (프론트엔드)
+- MySQL, PostgreSQL
+- Docker, docker-compose
+
+**실습 프로젝트**:
+- REST API 서버 구축
+- 인증 시스템 구현
+- 마이크로서비스 아키텍처
+</details>
 
 ---
 
@@ -343,38 +419,38 @@ space: 200 chars (짧고 명확)
 ## 🛠️ Tech Stack
 
 **Languages**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Python](https://img.shields.io/badge/Python-555555?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-555555?style=flat-square&logo=javascript&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-555555?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-555555?style=flat-square&logo=css3&logoColor=white)
 
 **AI/ML Frameworks**  
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-555555?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-555555?style=flat-square&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-555555?style=flat-square&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-555555?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-555555?style=flat-square&logo=numpy&logoColor=white)
 
 **LLM & RAG**  
-![LangChain](https://img.shields.io/badge/LangChain-121212?style=flat-square&logo=chainlink&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B6B?style=flat-square&logo=database&logoColor=white)
-![FAISS](https://img.shields.io/badge/FAISS-00ADD8?style=flat-square&logo=meta&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-555555?style=flat-square&logo=chainlink&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-555555?style=flat-square&logo=openai&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-555555?style=flat-square&logo=database&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-555555?style=flat-square&logo=meta&logoColor=white)
 
 **Backend & Database**  
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Django](https://img.shields.io/badge/Django-555555?style=flat-square&logo=django&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-555555?style=flat-square&logo=fastapi&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-555555?style=flat-square&logo=vue.js&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-555555?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-555555?style=flat-square&logo=postgresql&logoColor=white)
 
 **Tools & DevOps**  
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Git](https://img.shields.io/badge/Git-555555?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-555555?style=flat-square&logo=github&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-555555?style=flat-square&logo=docker&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-555555?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-555555?style=flat-square&logo=jupyter&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-555555?style=flat-square&logo=streamlit&logoColor=white)
 
 </div>
 
@@ -430,16 +506,6 @@ space: 200 chars (짧고 명확)
 
 **⭐️ From [sy-choi25](https://github.com/sy-choi25) | Building the future with AI! 🚀**
 
----
-
 *이 프로필은 실제 GitHub 커밋 히스토리와 프로젝트 README를 분석하여 작성되었습니다.*
-
-📊 **분석 기반**:
-- [AI-ARCADE](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN20-FINAL-5TEAM): 227 commits
-- [Boss Baby AI](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN20-4th-4TEAM): 51 commits
-- [창업 정책 안내 챗봇](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN20-3rd-4TEAM): 107 commits
-- [학습 기록](https://github.com/sy-choi25/python): 68 commits
-
-*Last updated: February 2026*
 
 </div>
