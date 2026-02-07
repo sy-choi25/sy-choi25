@@ -20,25 +20,27 @@
 
 ### 🌟 About Me 🌟
 
-```typescript
-const SY = {
-    location: "Seoul, South Korea 🇰🇷",
-    background: "Non-CS Major → AI Engineer 🚀",
-    education: "SK Networks AI Camp (SKN20) 🎓",
-    currentFocus: [
-        "RAG Systems & LLM Applications",
-        "Full Stack Development (Vue.js + Django + FastAPI)",
-        "Machine Learning & Deep Learning",
-        "Production-Ready AI Solutions"
-    ],
-    philosophy: "Every expert was once a beginner 💡",
-    passion: "Building AI systems that solve real-world problems",
-    askMeAbout: ["RAG", "LangChain", "LLM", "Vue.js", "Django", "FastAPI", "Career Transition"],
-    funFact: "Went from non-CS background to building AI platforms! 🌱→🌳"
-};
-```
+**📍 Location**: Seoul, South Korea 🇰🇷  
+**🎓 Background**: Film Distribution🎬 → AI Engineer🤖  
+**🏫 Education**: SK Networks AI Camp (SKN20)
 
-</div>
+**💡 Current Focus**:
+- RAG Systems & LLM Applications
+- Full Stack Development (Vue.js + Django + FastAPI)
+- Machine Learning & Deep Learning
+- Production-Ready AI Solutions
+
+**🎯 Philosophy**: "Every expert was once a beginner"
+
+**💬 Ask Me About**: RAG | LangChain | LLM | Vue.js | Django | FastAPI | Career Transition
+
+**🌱 Fun Fact**: 
+AI가 분석한 최소영님은 **"실행력이 강한 학습자"**입니다.  
+비전공자에서 시작해 6개월 만에 5개의 Production-Ready AI 프로젝트를 완성했고,  
+385+ 커밋으로 꾸준히 성장하며, 특히 RAG 시스템에서 검색 정확도를 60%에서 92.8%로  
+끌어올린 **문제 해결 중심의 개발자**입니다. 배운 것을 즉시 실전에 적용하고,  
+팀 프로젝트에서 AI 시스템, Backend부터 Frontend, DB 설계, Infrastructure까지 Full Stack으로 구현하며   
+팀 프로젝트에서 전체 파이프라인을 책임지는 **올라운더 개발자**입니다. 🚀
 
 ---
 
