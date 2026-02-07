@@ -35,12 +35,11 @@
 **💬 Ask Me About**: RAG | LangChain | LLM | Vue.js | Django | FastAPI | Career Transition
 
 **🌱 Fun Fact**: 
-AI가 분석한 최소영님은 **"실행력이 강한 학습자"**입니다.  
-비전공자에서 시작해 6개월 만에 5개의 Production-Ready AI 프로젝트를 완성했고,  
-385+ 커밋으로 꾸준히 성장하며, 특히 RAG 시스템에서 검색 정확도를 60%에서 92.8%로  
-끌어올린 **문제 해결 중심의 개발자**입니다. 배운 것을 즉시 실전에 적용하고,  
-팀 프로젝트에서 AI 시스템, Backend부터 Frontend, DB 설계, Infrastructure까지 Full Stack으로 구현하며   
-팀 프로젝트에서 전체 파이프라인을 책임지는 **올라운더 개발자**입니다. 🚀
+`AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.  
+비전공자에서 시작해 6개월 만에 5개의 Production-Ready AI 프로젝트를 완성했고, 385+ 커밋으로 꾸준히 성장하며, 
+특히 RAG 시스템에서 검색 정확도를 60%에서 92.8%로 끌어올린 **문제 해결 중심의 개발자**입니다. 
+배운 것을 즉시 실전에 적용하고, 팀 프로젝트에서 AI 시스템, Backend부터 Frontend, DB 설계, Infrastructure까지 Full Stack으로 구현하며   
+전체 파이프라인을 책임지는 **올라운더 개발자**입니다. 🚀`
 
 ---
 
@@ -403,37 +402,6 @@ AI가 분석한 최소영님은 **"실행력이 강한 학습자"**입니다.
 - 마이크로서비스 아키텍처
 </details>
 
-
----
-
-<div align="center">
-
-## 💡 Fun Facts 💡
-
-🎓 비전공자에서 AI 엔지니어로 전환  
-🚀 3개의 Production-Ready AI 프로젝트 완성  
-💪 총 385+ Commits로 성장 과정 기록  
-🧠 RAG 시스템 검색 정확도 92.8% 달성  
-⚡ 평균 API 응답시간 4.42초로 최적화  
-🌱 매일 새로운 것을 배우고 실험하는 것을 즐김  
-🤝 팀 프로젝트에서 Backend & RAG 전문가 역할 수행  
-📖 지속적인 학습과 성장을 최우선 가치로
-
-</div>
-
----
-
-<div align="center">
-
-## 📫 Connect With Me
-
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yourprofile)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://your-portfolio.com)
-[![Blog](https://img.shields.io/badge/Tech%20Blog-FFA116?style=for-the-badge&logo=rss&logoColor=white)](https://your-blog.com)
-
-</div>
-
 ---
 
 <div align="center">
@@ -455,7 +423,4 @@ AI가 분석한 최소영님은 **"실행력이 강한 학습자"**입니다.
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" />
 
 **⭐️ From [sy-choi25](https://github.com/sy-choi25) | Building the future with AI! 🚀**
-
-*이 프로필은 실제 GitHub 커밋 히스토리와 프로젝트 README를 분석하여 작성되었습니다.*
-
 </div>
