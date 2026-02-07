@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E3192,100:1BFFFF&height=200&section=header&text=Hi%20There!%20I'm%20SY%20👋&fontSize=50&fontAlignY=35&animation=twinkling&fontColor=fff" />
 
 <!-- Typing SVG -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&color=1BFFFF&center=true&lines=AI+Engineer+🤖;RAG+Developer+💬;Full+Stack+Engineer+🚀" />
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&color=1BFFFF&center=true&vCenter=true&lines=AI+Engineer;RAG+Developer;Full+Stack" alt="Typing SVG" /></a>
 
 <br/>
 
@@ -37,6 +37,48 @@ const SY = {
     funFact: "Went from non-CS background to building AI platforms! 🌱→🌳"
 };
 ```
+
+</div>
+
+---
+
+<div align="left">
+
+## 🛠️ Tech Stack
+
+**Languages**  
+![Python](https://img.shields.io/badge/Python-555555?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-555555?style=flat-square&logo=javascript&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-555555?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-555555?style=flat-square&logo=css3&logoColor=white)
+
+**AI/ML Frameworks**  
+![PyTorch](https://img.shields.io/badge/PyTorch-555555?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-555555?style=flat-square&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-555555?style=flat-square&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-555555?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-555555?style=flat-square&logo=numpy&logoColor=white)
+
+**LLM & RAG**  
+![LangChain](https://img.shields.io/badge/LangChain-555555?style=flat-square&logo=chainlink&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-555555?style=flat-square&logo=openai&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-555555?style=flat-square&logo=database&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-555555?style=flat-square&logo=meta&logoColor=white)
+
+**Backend & Database**  
+![Django](https://img.shields.io/badge/Django-555555?style=flat-square&logo=django&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-555555?style=flat-square&logo=fastapi&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-555555?style=flat-square&logo=vue.js&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-555555?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-555555?style=flat-square&logo=postgresql&logoColor=white)
+
+**Tools & DevOps**  
+![Git](https://img.shields.io/badge/Git-555555?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-555555?style=flat-square&logo=github&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-555555?style=flat-square&logo=docker&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-555555?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-555555?style=flat-square&logo=jupyter&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-555555?style=flat-square&logo=streamlit&logoColor=white)
 
 </div>
 
@@ -412,47 +454,6 @@ space: 200 chars (짧고 명확)
 - 마이크로서비스 아키텍처
 </details>
 
----
-
-<div align="left">
-
-## 🛠️ Tech Stack
-
-**Languages**  
-![Python](https://img.shields.io/badge/Python-555555?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-555555?style=flat-square&logo=javascript&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-555555?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-555555?style=flat-square&logo=css3&logoColor=white)
-
-**AI/ML Frameworks**  
-![PyTorch](https://img.shields.io/badge/PyTorch-555555?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-555555?style=flat-square&logo=tensorflow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-555555?style=flat-square&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-555555?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-555555?style=flat-square&logo=numpy&logoColor=white)
-
-**LLM & RAG**  
-![LangChain](https://img.shields.io/badge/LangChain-555555?style=flat-square&logo=chainlink&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-555555?style=flat-square&logo=openai&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-555555?style=flat-square&logo=database&logoColor=white)
-![FAISS](https://img.shields.io/badge/FAISS-555555?style=flat-square&logo=meta&logoColor=white)
-
-**Backend & Database**  
-![Django](https://img.shields.io/badge/Django-555555?style=flat-square&logo=django&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-555555?style=flat-square&logo=fastapi&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-555555?style=flat-square&logo=vue.js&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-555555?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-555555?style=flat-square&logo=postgresql&logoColor=white)
-
-**Tools & DevOps**  
-![Git](https://img.shields.io/badge/Git-555555?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-555555?style=flat-square&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-555555?style=flat-square&logo=docker&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-555555?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-555555?style=flat-square&logo=jupyter&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-555555?style=flat-square&logo=streamlit&logoColor=white)
-
-</div>
 
 ---
 
