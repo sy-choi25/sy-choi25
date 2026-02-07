@@ -5,8 +5,7 @@
 
 
 <!-- Typing SVG -->
-
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=F75C7E&center=true&vCenter=true&random=false&width=700&lines=AI+%26+Machine+Learning+Enthusiast+🤖;RAG+System+Developer+💬;Full+Stack+AI+Engineer+🚀;From+Non-CS+to+AI+Professional+💪;Building+Real-World+AI+Solutions+✨" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&color=F75C7E&center=true&vCenter=true&lines=AI+Engineer;RAG+Developer;Full+Stack" alt="Typing SVG" /></a>
 
 <br/>
 
