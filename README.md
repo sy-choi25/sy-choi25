@@ -21,7 +21,7 @@
 ### 🌟 About Me 🌟
 
 **📍 Location**: Seoul, South Korea 🇰🇷  
-**🎓 Background**: Film Distribution🎬 → AI Engineer🤖  
+**🎓 Background**: Film Distribution 🎬 → AI Engineer 🤖  
 **🏫 Education**: SK Networks AI Camp (SKN20)
 
 **💡 Current Focus**:
@@ -34,12 +34,14 @@
 
 **💬 Ask Me About**: RAG | LangChain | LLM | Vue.js | Django | FastAPI | Career Transition
 
-**🌱 Fun Fact**: 
-AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.  
-비전공자에서 시작해 6개월 만에 5개의 Production-Ready AI 프로젝트를 완성했고, 385+ 커밋으로 꾸준히 성장하며, 
-특히 RAG 시스템에서 검색 정확도를 60%에서 92.8%로 끌어올린 **문제 해결 중심의 개발자**입니다. 
-배운 것을 즉시 실전에 적용하고, 팀 프로젝트에서 AI 시스템, Backend부터 Frontend, DB 설계, Infrastructure까지 Full Stack으로 구현하며   
-전체 파이프라인을 책임지는 **올라운더 개발자**입니다. 🚀
+**🌱 Fun Fact**:  
+> 💡 **영화 유통 → AI 엔지니어로 전환**  
+> 6개월 만에 3개의 Production 프로젝트 완성 | 385+ Commits  
+> Full Stack (Backend + Frontend + AI + DB + Infra) 개발자로  
+> RAG 검색 정확도를 60% → 92.8%로 개선 (+32% 향상)  
+> 배우고 즉시 실전에 적용하는 **올라운더 개발자**입니다. 🚀
+
+</div>
 
 ---
 
@@ -104,9 +106,12 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 - 🐛 **Bug Hunt**: 3단계 디버깅 사고력 평가 시스템
 - 🏗️ **System Architecture**: 실시간 아키텍처 설계 & Deep Dive 면접
 
-**작업 내용**:
+<details>
+<summary><b>📌 작업 내용</b></summary>
 
-**Bug Hunt 시스템 개발**
+---
+
+#### 🔧 Bug Hunt 시스템 개발
 - 12가지 실무 디버깅 시나리오 설계 (Data Leakage, Label Imbalance, Overfitting, Off-by-one Error, Null Pointer, Type Mismatch 등)
 - 3단계 평가 시스템 구현
   - Model A: 사고 방향 평가 (버그 원인 정확도)
@@ -114,7 +119,9 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
   - Model C: 사고 연속성 평가 (논리적 흐름, 근거 품질)
 - Step별 개별 피드백 생성 로직 개발
 
-**LLM 검증 및 최적화**
+---
+
+#### 🤖 LLM 검증 및 최적화
 - 다양한 LLM 모델 성능 비교 분석 (GPT-4o-mini, GPT-4, Claude 등)
 - LLM 신뢰도 검증 시스템 구축
   - 평가 일관성 테스트 (동일 입력 → 유사 출력 검증)
@@ -122,10 +129,14 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
   - 응답 품질 지표 개발
 - 최적 모델 선정 및 프롬프트 파라미터 튜닝
 
-**Backend API 개발**
+---
+
+#### ⚙️ Backend API 개발
 - Bug Hunt Practice용 REST API 엔드포인트 구현
 - 사용자 답변 검증 및 평가 결과 저장 로직
 - PostgreSQL 데이터베이스 연동 및 쿼리 최적화
+
+</details>
 
 **성과**:
 - ✅ 12가지 버그 시나리오 완성 및 3단계 평가 시스템 구축
@@ -172,47 +183,91 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 - 📅 **일정 관리 시스템**: AI 자동 일정 추출 + D-Day 캘린더
 - 🌐 **3-Way Branching**: 내부 RAG → 웹 검색 (Tavily) → AI Fallback
 
-**작업 내용**:
+<details>
+<summary><b>📌 작업 내용</b></summary>
 
-**RAG 파이프라인 구축**
+---
+
+#### 🔍 RAG 파이프라인 구축
+- 7가지 데이터 타입 통합 벡터화 (announcement, stat, space, law, cases, program, ip_manual)
+- 문서 타입별 차별화 청킹 전략 설계
+  - announcement: 400 chars, overlap 80
+  - law: 700 chars, overlap 120 (조문 단위 유지)
+  - space: 200 chars, overlap 30 (짧고 명확)
+- ChromaDB 벡터 스토어 구축 및 임베딩 (OpenAI text-embedding-3-small)
 - Query Transformation 구현 (대화 히스토리 기반 질문 재구성)
 - Multi-Query RAG 개발 (1개 질문 → 3개 다양한 쿼리 생성)
+- 질문 유형별 프롬프트 자동 라우팅 (recommend / law / rag)
 - Tavily API 연동 웹 검색 Fallback 시스템
 
-**Backend 개발 (Django + FastAPI)**
+---
+
+#### ⚙️ Backend 개발 (Django + FastAPI)
 - Django 프로젝트 구조 설계 및 앱 생성
+- MySQL 데이터베이스 스키마 설계
+  - users, chat_sessions, chat_log, calendar_events, business_plans 테이블
 - Django ORM 모델 구현 및 마이그레이션
 - FastAPI 비동기 API 서버 구축 (RAG 엔진)
 - RESTful API 엔드포인트 개발
   - 채팅: `/api/chat`, `/api/history`
   - 캘린더: `/api/calendar/events`, `/api/calendar/toggle`, `/api/calendar/delete`
+  - 사업계획서: `/api/business-plan/analyze`, CRUD 엔드포인트
 - Django + FastAPI 마이크로서비스 통신 구조 구축
+- 사용자 인증 및 세션 관리 (Django Auth)
 
-**Frontend 개발 (Django Templates + Vanilla JS)**
+---
+
+#### 🎨 Frontend 개발 (Django Templates + Vanilla JS)
+- 채팅 인터페이스 구현
+  - 실시간 메시지 렌더링 (말풍선 UI)
+  - 출처 배지 표시 (📚 내부 문서 / 🌐 웹 검색 / 💭 AI 지식)
+  - 로딩 애니메이션 (타이핑 인디케이터)
+  - 일정 자동 추출 팝업 모달
 - **월간 캘린더 시스템 전체 구현**
   - 42칸 그리드 레이아웃 (6주 표시)
   - D-Day 자동 계산 및 색상 시각화
+    - D-3 이하: 🔴 빨강 (긴급)
+    - D-7 이하: 🟡 노랑 (주의)
+    - D-7 초과: 🟢 초록 (여유)
   - 일정 CRUD 인터랙션 (추가/완료/삭제)
   - 월 이동 네비게이션 (이전/다음/오늘)
   - 다가오는 일정 리스트 렌더링
+- 사업계획서 관리 페이지
+  - 목록 뷰 (카드형 레이아웃)
+  - 작성 폼 (멀티 섹션)
+  - 상세 뷰 (편집 가능)
+  - AI 분석 결과 탭 UI (단기/중기/장기 로드맵)
+- 마이페이지 대시보드 (통계 카드, 빠른 액션)
 
-**AI 분석 시스템 개발**
+---
+
+#### 🤖 AI 분석 시스템 개발
+- 사업계획서 분석 프롬프트 엔지니어링 (20년 경력 벤처투자 전문가 페르소나)
+- 5개 점수 계산 알고리즘 (투자매력도, 시장성, 실현가능성, 차별성, 완성도)
+- 8개 섹션 구조화 (시장 동향, 실현 가능성, 강점, 약점, 리스크, 개선 제안, 종합 의견)
 - 일정 자동 추출 로직
   - 답변 텍스트에서 날짜 패턴 정규식 감지
   - 과거 날짜 필터링
   - 연속 날짜 → 시작/마감 일정으로 통합
   - 중복 제거 및 정규화
 
-**Infrastructure & DevOps**
+---
+
+#### 🐳 Infrastructure & DevOps
 - Docker Compose 설정 파일 작성
   - Django (8001), FastAPI (8000), MySQL (3306) 컨테이너 구성
   - 네트워크 설정 및 볼륨 마운트
 - 환경 변수 관리 (.env)
 - Requirements.txt 의존성 관리
 
-**데이터 수집 및 전처리**
+---
+
+#### 📊 데이터 수집 및 전처리
 - K-Startup API 데이터 수집 스크립트 작성
 - PDF 문서 파싱 (PyMuPDF)
+- 텍스트 청킹 및 전처리 파이프라인 구축
+
+</details>
 
 **성과**:
 - ✅ 검색 정확도 92.8% 달성 (목표 90% 초과)
@@ -223,6 +278,15 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 
 **내가 해결한 문제**:
 ```python
+# Problem: RAG 검색 정확도 부족 (초기 60% 수준)
+# Solution: 문서 타입별 청킹 최적화
+- 기존: 모든 문서 동일 크기 (1000 chars)
+- 개선: 문서 특성에 맞게 차별화
+  - announcement: 400 chars (중간)
+  - law: 700 chars (긴 조문 유지)
+  - space: 200 chars (짧고 명확)
+→ 검색 정확도 60% → 92.8% (32% 향상)
+
 # Problem: 사용자 질문이 애매하면 엉뚱한 답변
 # Solution: Query Transformation + Multi-Query
 - 대화 히스토리 기반 질문 재구성
@@ -250,6 +314,13 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 - D-Day 계산 로직 및 색상 매핑
 → 정확한 일정 추출 및 시각화
 
+# Problem: API 응답 속도 느림 (초기 7초)
+# Solution: 벡터 검색 최적화
+- Top-K 파라미터 조정 (30 → 10)
+- 프롬프트 길이 단축 (불필요한 설명 제거)
+- LLM 호출 최소화 (캐싱 활용)
+→ 평균 응답 시간 4.42초로 개선
+
 # Problem: Hallucination (근거 없는 답변)
 # Solution: 프롬프트 제약 조건 명시
 """
@@ -268,44 +339,26 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 
 </div>
 
-### 🔥 RAG 시스템 전문가
+### 🎯 Production-Ready RAG 시스템 구축 경험
+**검색 정확도 92.8% 달성** (Query Transformation + Multi-Query 기법 적용)
+- 15,510개 문서 벡터화 및 ChromaDB 구축
+- 문서 타입별 최적 청킹 전략 설계 (정확도 +32% 향상)
+- 3-Way Fallback으로 100% 응답률 보장 (RAG → Web Search → AI)
+- Multi-Query를 통한 검색 재현율 30% 개선
 
-**Query Transformation 마스터**
-```python
-# Before: "지원사업 신청하려면 어떤 조건이 필요한가요?"
-# After: "지원사업 신청 조건"
-→ 검색 정확도 30% 향상
-```
-
-**Multi-Query RAG 구현**
-```python
-# 하나의 질문 → 3개의 다양한 쿼리
-"서울 AI 창업" → [
-    "서울 인공지능 스타트업",
-    "수도권 AI 기업 지원",
-    "서울시 기술창업 프로그램"
-]
-→ 재현율 30% 향상
-```
-
----
-
-### 🐛 Backend & Full Stack 개발
-
-**마이크로서비스 아키텍처**
-- Django + FastAPI + MySQL 통합
+### 🏗️ Full Stack 개발 (AI 서비스 특화)
+**마이크로서비스 아키텍처 설계 및 구현**
+- Django + FastAPI + MySQL 통합 구조
 - Docker Compose 기반 컨테이너 오케스트레이션
-- RESTful API 설계 및 구현
+- RESTful API 설계 및 엔드포인트 개발
+- 바닐라 JavaScript로 동적 UI 구현 (캘린더, 채팅 인터페이스)
 
-**데이터베이스 설계**
-- MySQL 스키마 설계 (정규화 및 인덱싱)
-- Django ORM을 활용한 효율적인 쿼리
-- 데이터 마이그레이션 관리
-
-**Frontend 개발**
-- 바닐라 JavaScript로 동적 UI 구현
-- 월간 캘린더 시스템 전체 개발
-- 반응형 웹 디자인
+### ⚡ LLM 프롬프트 엔지니어링 & 최적화
+**AI 평가 일관성 ±5점 → ±2점 개선**
+- Few-shot Learning 및 Temperature 파라미터 최적화
+- LLM 성능 비교 분석 (GPT-4o-mini, GPT-4, Claude)
+- Hallucination 감지 및 신뢰도 검증 시스템 구축
+- 동일 입력 반복 테스트 → Cosine Similarity 기반 필터링
 
 ---
 
@@ -420,7 +473,10 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E3192,100:1BFFFF&height=100&section=footer" />
 
 **⭐️ From [sy-choi25](https://github.com/sy-choi25) | Building the future with AI! 🚀**
+
+*이 프로필은 실제 GitHub 커밋 히스토리와 프로젝트 README를 분석하여 작성되었습니다.*
+
 </div>
