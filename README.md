@@ -35,11 +35,11 @@
 **💬 Ask Me About**: RAG | LangChain | LLM | Vue.js | Django | FastAPI | Career Transition
 
 **🌱 Fun Fact**:  
-> 💡 **영화 유통 → AI 엔지니어로 전환**  
-> 6개월 만에 3개의 Production 프로젝트 완성 | 385+ Commits  
-> Full Stack (Backend + Frontend + AI + DB + Infra) 개발자로  
-> RAG 검색 정확도를 60% → 92.8%로 개선 (+32% 향상)  
-> 배우고 즉시 실전에 적용하는 **올라운더 개발자**입니다. 🚀
+AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.  
+비전공자에서 시작해 6개월 만에 5개의 Production-Ready AI 프로젝트를 완성했고, 385+ 커밋으로 꾸준히 성장하며, 
+특히 RAG 시스템에서 검색 정확도를 60%에서 92.8%로 끌어올린 **문제 해결 중심의 개발자**입니다. 
+배운 것을 즉시 실전에 적용하고, 팀 프로젝트에서 AI 시스템, Backend부터 Frontend, DB 설계, Infrastructure까지 Full Stack으로 구현하며   
+전체 파이프라인을 책임지는 **올라운더 개발자**입니다.
 
 </div>
 
@@ -190,66 +190,30 @@
 
 #### 🔍 RAG 파이프라인 구축
 - 7가지 데이터 타입 통합 벡터화 (announcement, stat, space, law, cases, program, ip_manual)
-- 문서 타입별 차별화 청킹 전략 설계
-  - announcement: 400 chars, overlap 80
-  - law: 700 chars, overlap 120 (조문 단위 유지)
-  - space: 200 chars, overlap 30 (짧고 명확)
-- ChromaDB 벡터 스토어 구축 및 임베딩 (OpenAI text-embedding-3-small)
 - Query Transformation 구현 (대화 히스토리 기반 질문 재구성)
 - Multi-Query RAG 개발 (1개 질문 → 3개 다양한 쿼리 생성)
-- 질문 유형별 프롬프트 자동 라우팅 (recommend / law / rag)
 - Tavily API 연동 웹 검색 Fallback 시스템
 
 ---
 
 #### ⚙️ Backend 개발 (Django + FastAPI)
 - Django 프로젝트 구조 설계 및 앱 생성
-- MySQL 데이터베이스 스키마 설계
-  - users, chat_sessions, chat_log, calendar_events, business_plans 테이블
 - Django ORM 모델 구현 및 마이그레이션
 - FastAPI 비동기 API 서버 구축 (RAG 엔진)
 - RESTful API 엔드포인트 개발
-  - 채팅: `/api/chat`, `/api/history`
-  - 캘린더: `/api/calendar/events`, `/api/calendar/toggle`, `/api/calendar/delete`
-  - 사업계획서: `/api/business-plan/analyze`, CRUD 엔드포인트
+  - 채팅
+  - 캘린더
 - Django + FastAPI 마이크로서비스 통신 구조 구축
-- 사용자 인증 및 세션 관리 (Django Auth)
 
 ---
 
 #### 🎨 Frontend 개발 (Django Templates + Vanilla JS)
-- 채팅 인터페이스 구현
-  - 실시간 메시지 렌더링 (말풍선 UI)
-  - 출처 배지 표시 (📚 내부 문서 / 🌐 웹 검색 / 💭 AI 지식)
-  - 로딩 애니메이션 (타이핑 인디케이터)
-  - 일정 자동 추출 팝업 모달
 - **월간 캘린더 시스템 전체 구현**
   - 42칸 그리드 레이아웃 (6주 표시)
   - D-Day 자동 계산 및 색상 시각화
-    - D-3 이하: 🔴 빨강 (긴급)
-    - D-7 이하: 🟡 노랑 (주의)
-    - D-7 초과: 🟢 초록 (여유)
   - 일정 CRUD 인터랙션 (추가/완료/삭제)
   - 월 이동 네비게이션 (이전/다음/오늘)
   - 다가오는 일정 리스트 렌더링
-- 사업계획서 관리 페이지
-  - 목록 뷰 (카드형 레이아웃)
-  - 작성 폼 (멀티 섹션)
-  - 상세 뷰 (편집 가능)
-  - AI 분석 결과 탭 UI (단기/중기/장기 로드맵)
-- 마이페이지 대시보드 (통계 카드, 빠른 액션)
-
----
-
-#### 🤖 AI 분석 시스템 개발
-- 사업계획서 분석 프롬프트 엔지니어링 (20년 경력 벤처투자 전문가 페르소나)
-- 5개 점수 계산 알고리즘 (투자매력도, 시장성, 실현가능성, 차별성, 완성도)
-- 8개 섹션 구조화 (시장 동향, 실현 가능성, 강점, 약점, 리스크, 개선 제안, 종합 의견)
-- 일정 자동 추출 로직
-  - 답변 텍스트에서 날짜 패턴 정규식 감지
-  - 과거 날짜 필터링
-  - 연속 날짜 → 시작/마감 일정으로 통합
-  - 중복 제거 및 정규화
 
 ---
 
@@ -258,14 +222,12 @@
   - Django (8001), FastAPI (8000), MySQL (3306) 컨테이너 구성
   - 네트워크 설정 및 볼륨 마운트
 - 환경 변수 관리 (.env)
-- Requirements.txt 의존성 관리
 
 ---
 
 #### 📊 데이터 수집 및 전처리
 - K-Startup API 데이터 수집 스크립트 작성
 - PDF 문서 파싱 (PyMuPDF)
-- 텍스트 청킹 및 전처리 파이프라인 구축
 
 </details>
 
@@ -278,15 +240,6 @@
 
 **내가 해결한 문제**:
 ```python
-# Problem: RAG 검색 정확도 부족 (초기 60% 수준)
-# Solution: 문서 타입별 청킹 최적화
-- 기존: 모든 문서 동일 크기 (1000 chars)
-- 개선: 문서 특성에 맞게 차별화
-  - announcement: 400 chars (중간)
-  - law: 700 chars (긴 조문 유지)
-  - space: 200 chars (짧고 명확)
-→ 검색 정확도 60% → 92.8% (32% 향상)
-
 # Problem: 사용자 질문이 애매하면 엉뚱한 답변
 # Solution: Query Transformation + Multi-Query
 - 대화 히스토리 기반 질문 재구성
@@ -313,13 +266,6 @@
 - 과거 날짜 필터링 (현재 날짜 기준)
 - D-Day 계산 로직 및 색상 매핑
 → 정확한 일정 추출 및 시각화
-
-# Problem: API 응답 속도 느림 (초기 7초)
-# Solution: 벡터 검색 최적화
-- Top-K 파라미터 조정 (30 → 10)
-- 프롬프트 길이 단축 (불필요한 설명 제거)
-- LLM 호출 최소화 (캐싱 활용)
-→ 평균 응답 시간 4.42초로 개선
 
 # Problem: Hallucination (근거 없는 답변)
 # Solution: 프롬프트 제약 조건 명시
