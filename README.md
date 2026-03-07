@@ -99,48 +99,78 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 
 > 게임처럼 배우고, 실무처럼 평가받는 AI 엔지니어 트레이닝 플랫폼
 
-**핵심 기술**: `Vue.js` `Django` `FastAPI` `GPT-4o-mini` `PostgreSQL` `LangChain`
+**핵심 기술**: `Vue.js` `Django` `PostgreSQL` `GPT-4o` `GPT-4o-mini` `text-embedding-3-small` `faster-whisper` `Docker`
 
 **주요 기능**:
 - 🧠 **Pseudo Practice**: AI 기반 5차원 역량 평가 (정합성, 추상화, 예외처리, 구현력, 설계력)
-- 🐛 **Bug Hunt**: 3단계 디버깅 사고력 평가 시스템
+- 🐛 **Bug Hunt**: 4단계 디버깅 사고력 평가 시스템 (Docker 샌드박스 
 - 🏗️ **System Architecture**: 실시간 아키텍처 설계 & Deep Dive 면접
++ 심층 인터뷰 + 루브릭 채점)
+- 💼 **Job Planner**: 채용공고 파싱 → 스킬 갭 분석 → 맞춤 면접 계획 자동 생성
+- 🎙️ **Interview**: 4-Layer AI 면접 엔진 (증거 추출 → 상태 관리 → 적응형 질문 → 면접 설계)
 
 <details>
 <summary><b>📌 작업 내용</b></summary>
 
 ---
 
-#### 🔧 Bug Hunt 시스템 개발
-- 12가지 실무 디버깅 시나리오 설계 (Data Leakage, Label Imbalance, Overfitting, Off-by-one Error, Null Pointer, Type Mismatch 등)
-- 3단계 평가 시스템 구현
-  - Model A: 사고 방향 평가 (버그 원인 정확도)
-  - Model B: 코드 위험도 평가 (변경 라인 수, 조건문/예외 처리)
-  - Model C: 사고 연속성 평가 (논리적 흐름, 근거 품질)
-- Step별 개별 피드백 생성 로직 개발
+#### 🐛 Bug Hunt 시스템 전체 개발
+- 실무 디버깅 시나리오 설계 (Data Leakage, Label Imbalance, Overfitting, Off-by-one Error, Gradient 누적 등)
+- 4단계 순차 평가 파이프라인 구축
+  - Stage 1: Docker 샌드박스에서 수정 코드 동작 정확성 검증
+  - Stage 2: GPT 기반 심층 인터뷰 (3턴 적응형 질문 — 핵심 이해도 → 메커니즘 → 응용력)
+  - Stage 3: 3-Tier 루브릭 스텝별 채점 (핵심 40점 / 메커니즘 35점 / 응용 25점)
+  - Stage 4: 종합 평가 (인터뷰 결과 + 힌트 사용 횟수 + 실패 횟수 반영)
+- 평가 보정 로직 구현 (무힌트+무실패 +3점 / 힌트 3회+ -2점)
+- Bug Hunt Practice용 REST API 엔드포인트 구현 및 PostgreSQL 연동
 
 ---
 
-#### 🤖 LLM 검증 및 최적화
-- 다양한 LLM 모델 성능 비교 분석 (GPT-4o-mini, GPT-4, Claude 등)
+#### 💼 Job Planner 시스템 전체 개발
+- 채용공고 3가지 입력 소스 파싱 구현
+  - URL: BeautifulSoup 웹 크롤링
+  - 이미지: GPT-4o Vision(OCR) 텍스트 추출
+  - 텍스트: 직접 파싱
+- 스킬 매칭 파이프라인 구축
+  - text-embedding-3-small으로 스킬 임베딩
+  - L2 정규화 → 코사인 유사도 계산 → readiness_score(0~1.0) 산출
+- 상태 기반 Action 추천 (learn_skill / apply_now / pivot_role / wait_and_prepare)
+- Mock Interview Plan Generator 연계: 채용공고 required_skills + 사용자 약점 → 기술 심층 슬롯 동적 생성
+
+---
+
+#### 🎙️ Mock Interview 시스템 전체 개발
+- 4-Layer AI 면접 엔진 설계 및 구현
+
+  | Layer | 모듈 | 역할 |
+  |-------|------|------|
+  | L1 | Analyst (gpt-4o-mini) | 답변에서 증거 키 충족 여부 True/False 추출 |
+  | L2 | State Engine (Rule) | UNKNOWN → PARTIAL → CLEAR 상태 전이 관리 |
+  | L3 | Interviewer (gpt-4o) | 누락 증거 채우기 위한 적응형 질문 생성 (SSE) |
+  | L4 | Plan Generator (gpt-4o) | Job Planner 분석 + 약점 → 맞춤 면접 계획 설계 |
+
+- 평가 슬롯 동적 구성 (동기 / 기술 심층 / 협업 / 문제 해결 / 성장)
+- 슬롯 이동 조건 구현: CLEAR 달성 / 최대 3회 시도 / 연속 2회 새 증거 없음
+- STT(faster-whisper), TTS(alloy/nova/onyx/shimmer), Vision(비언어 분석) 멀티모달 파이프라인 연동
+
+---
+
+#### 🤖 전 모듈 LLM 성능 평가
+- 플랫폼 전체 기능(Bug Hunt, Job Planner, Mock Interview, Pseudo Practice, System Architecture)에 사용되는 모든 LLM 모델 성능 비교 분석
 - LLM 신뢰도 검증 시스템 구축
   - 평가 일관성 테스트 (동일 입력 → 유사 출력 검증)
-  - Hallucination 감지 및 제거
-  - 응답 품질 지표 개발
-- 최적 모델 선정 및 프롬프트 파라미터 튜닝
-
----
-
-#### ⚙️ Backend API 개발
-- Bug Hunt Practice용 REST API 엔드포인트 구현
-- 사용자 답변 검증 및 평가 결과 저장 로직
-- PostgreSQL 데이터베이스 연동 및 쿼리 최적화
+  - 동일 입력 반복 테스트 + Cosine Similarity 기반 Hallucination 감지
+  - 응답 품질 지표 개발 및 threshold 기반 재평가 로직
+- 기능별 최적 모델 선정 (gpt-4o / gpt-4o-mini / gpt-5-mini 역할 분담 결정)
+- Temperature, Top-p 등 파라미터 튜닝으로 평가 일관성 개선
 
 </details>
 
 **성과**:
-- ✅ 12가지 버그 시나리오 완성 및 3단계 평가 시스템 구축
-- ✅ LLM 평가 일관성 ±5점 → ±2점 목표로 개선
+- ✅ Bug Hunt 4단계 평가 파이프라인 완성 (Docker 샌드박스 + 심층 인터뷰 + 루브릭 채점)
+- ✅ Job Planner 3-source 파싱 + 스킬 임베딩 매칭 시스템 구축
+- ✅ Mock Interview 4-Layer 엔진 + 멀티모달(STT/TTS/Vision) 파이프라인 완성
+- ✅ 전 모듈 LLM 평가 — 평가 일관성 ±5점 → ±2점 개선
 - ✅ 227 Commits 기여
 
 **내가 해결한 문제**:
@@ -150,7 +180,7 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 - 평가 기준을 정량화 (점수별 구체적 기준 명시)
 - 프롬프트에 예시 답변 포함 (Few-shot Learning)
 - Temperature 파라미터 최적화 (0.3으로 낮춤)
-→ 평가 일관성 대폭 향상
+→ 평가 일관성 ±5점 → ±2점 개선
 
 # Problem: LLM Hallucination (근거 없는 평가)
 # Solution: 신뢰도 검증 시스템 구축
@@ -159,11 +189,18 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 - 일정 threshold 이하 시 재평가
 → 신뢰할 수 없는 답변 필터링
 
-# Problem: 버그 시나리오 난이도 불균형
-# Solution: 데이터 기반 난이도 조정
-- 사용자 정답률 수집 및 분석
-- 너무 쉽거나 어려운 문제 재설계
-→ 적절한 학습 곡선 구현
+# Problem: 채용공고 스킬 매칭 정확도 부족
+# Solution: 임베딩 기반 시맨틱 매칭
+- 단순 키워드 매칭 → text-embedding-3-small 벡터화
+- L2 정규화 + 코사인 유사도로 유사 스킬 인식
+→ "LangChain" ↔ "LLM 파이프라인" 같은 표현 다양성 대응
+
+# Problem: 면접 질문이 맥락 없이 반복됨
+# Solution: 증거 키 기반 상태 전이 엔진
+- 답변에서 증거 키 충족 여부를 매 턴 추출 (L1 Analyst)
+- UNKNOWN → PARTIAL → CLEAR 상태 전이로 다음 질문 결정
+- 연속 2회 새 증거 없으면 다음 슬롯으로 이동
+→ 맥락 연속성 있는 적응형 면접 구현
 ```
 
 ---
