@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E3192,100:1BFFFF&height=200&section=header&text=Hi%20There!%20I'm%20최소영%20&fontSize=50&fontAlignY=35&animation=twinkling&fontColor=fff" />
 
 <!-- Typing SVG -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&color=2a5298&center=true&vCenter=true&lines=AI+Engineer;RAG+Developer;Full+Stack" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&color=2a5298&center=true&vCenter=true&lines=AI+Engineer;LLM+%26+RAG+Developer;Multimodal+AI+Builder;Full+Stack+Developer" alt="Typing SVG" /></a>
 
 <br/>
 
@@ -25,21 +25,20 @@
 **🏫 Education**: SK Networks AI Camp (SKN20)
 
 **💡 Current Focus**:
-- RAG Systems & LLM Applications
+- LLM Evaluation & Prompt Engineering
+- Multimodal AI (STT / TTS / Vision)
+- RAG Systems & Embedding-based Semantic Search
 - Full Stack Development (Vue.js + Django + FastAPI)
-- Machine Learning & Deep Learning
 - Production-Ready AI Solutions
 
 **🎯 Philosophy**: "Every expert was once a beginner"
 
-**💬 Ask Me About**: RAG | LangChain | LLM | Vue.js | Django | FastAPI | Career Transition
+**💬 Ask Me About**: RAG | LangChain | LLM Evaluation | Prompt Engineering | Multimodal AI | Vue.js | Django | FastAPI | Embedding Search | Career Transition
 
-**🌱 Fun Fact**:  
-AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.  
-비전공자에서 시작해 6개월 만에 5개의 Production-Ready AI 프로젝트를 완성했고, 385+ 커밋으로 꾸준히 성장하며, 
-특히 RAG 시스템에서 검색 정확도를 60%에서 92.8%로 끌어올린 **문제 해결 중심의 개발자**입니다. 
-배운 것을 즉시 실전에 적용하고, 팀 프로젝트에서 AI 시스템, Backend부터 Frontend, DB 설계, Infrastructure까지 Full Stack으로 구현하며   
-전체 파이프라인을 책임지는 **올라운더 개발자**입니다.
+**🌱 Fun Fact**:
+AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
+비전공자에서 시작해 6개월 만에 Production-Ready AI 프로젝트를 완성했고, 385+ 커밋으로 꾸준히 성장하며,
+RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, STT/TTS/Vision 멀티모달 파이프라인 구축, 플랫폼 전 모듈 LLM 성능 평가까지 **AI 시스템 설계부터 평가까지 전 과정을 책임지는 개발자**입니다. 팀 프로젝트에서 Backend, AI 시스템, DB 설계, Infrastructure까지 Full Stack으로 구현하며 전체 파이프라인을 혼자 완성하는 **올라운더 AI 개발자**입니다.
 
 </div>
 
@@ -62,11 +61,12 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 ![Pandas](https://img.shields.io/badge/Pandas-555555?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-555555?style=flat-square&logo=numpy&logoColor=white)
 
-**LLM & RAG**  
+**LLM & RAG**
 ![LangChain](https://img.shields.io/badge/LangChain-555555?style=flat-square&logo=chainlink&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-555555?style=flat-square&logo=openai&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-555555?style=flat-square&logo=database&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-555555?style=flat-square&logo=meta&logoColor=white)
+![faster-whisper](https://img.shields.io/badge/faster--whisper-555555?style=flat-square&logo=audiomack&logoColor=white)
 
 **Backend & Database**  
 ![Django](https://img.shields.io/badge/Django-555555?style=flat-square&logo=django&logoColor=white)
@@ -225,21 +225,37 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 
 ---
 
-#### 🔍 RAG 파이프라인 구축
+#### 🔍 RAG 파이프라인 구축 (6단계)
 - 7가지 데이터 타입 통합 벡터화 (announcement, stat, space, law, cases, program, ip_manual)
-- Query Transformation 구현 (대화 히스토리 기반 질문 재구성)
-- Multi-Query RAG 개발 (1개 질문 → 3개 다양한 쿼리 생성)
-- Tavily API 연동 웹 검색 Fallback 시스템
+- **문서 타입별 최적 청킹 전략 설계** → 검색 정확도 +32% 향상
+
+  | 카테고리 | 문서 수 | 청킹 크기 | 내용 |
+  |---------|--------|---------|------|
+  | space | 14,134 | 200 chars | 전국 창업 공간 정보 |
+  | ip_manual | 356 | 350 chars | 지식재산권 매뉴얼 |
+  | program | 103 | 300 chars | 스타트업 지원 프로그램 |
+  | announcement | 159 | 400 chars | K-Startup 지원사업 공고 |
+  | cases | 1 | 450 chars | 창업 실패·재도전 사례 |
+  | stat | 25 | 500 chars | 창업 통계 자료 |
+  | law | 1 | 700 chars | 중소기업창업 지원법 |
+
+- 6단계 파이프라인 구현
+  1. Contextualize Question: 대화 히스토리 기반 질문 재구성
+  2. Query Transformation: LLM 기반 쿼리 최적화
+  3. Multi-Query Generation: 1개 질문 → 3개 쿼리 확장
+  4. Vector Search: ChromaDB Top-K=10 검색 (쿼리당) → 총 30개 후보 수집
+  5. Relevance Check: LLM 기반 문서 관련성 검증으로 노이즈 제거
+  6. Answer Generation: 3-Way Branching (내부 RAG → Tavily 웹 검색 → AI Fallback)
 
 ---
 
 #### ⚙️ Backend 개발 (Django + FastAPI)
 - Django 프로젝트 구조 설계 및 앱 생성
-- Django ORM 모델 구현 및 마이그레이션
+- Django ORM 모델 구현 (users / chat_sessions / chat_log / calendar_events / business_plans)
+  - chat_log에 source_type 컬럼 설계 (RAG / 웹 검색 / AI Fallback 소스 추적)
+  - calendar_events에 is_completed 플래그로 완료 상태 관리
 - FastAPI 비동기 API 서버 구축 (RAG 엔진)
-- RESTful API 엔드포인트 개발
-  - 채팅
-  - 캘린더
+- RESTful API 엔드포인트 개발 (채팅 / 캘린더 / 사업계획서)
 - Django + FastAPI 마이크로서비스 통신 구조 구축
 
 ---
@@ -329,19 +345,33 @@ AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
 - 3-Way Fallback으로 100% 응답률 보장 (RAG → Web Search → AI)
 - Multi-Query를 통한 검색 재현율 30% 개선
 
+### 🔍 임베딩 기반 시맨틱 검색 & 스킬 매칭
+**키워드 매칭의 한계를 벡터 검색으로 극복**
+- text-embedding-3-small 기반 스킬 임베딩 파이프라인 구축
+- L2 정규화 + 코사인 유사도로 표현 다양성 대응 (예: "LangChain" ↔ "LLM 파이프라인")
+- readiness_score(0~1.0) 산출 → 상태 기반 Action 추천 시스템 설계
+- 채용공고 required_skills → 면접 슬롯 동적 생성으로 시스템 간 데이터 연계
+
+### 🎙️ 멀티모달 AI 파이프라인 구축
+**텍스트를 넘어 음성·영상까지 처리하는 AI 인터뷰 시스템**
+- STT: faster-whisper 기반 실시간 음성 인식 파이프라인
+- TTS: alloy/nova/onyx/shimmer 다중 보이스 지원
+- Vision: 비언어적 표현(표정, 자세) 분석으로 면접 평가 보완
+- SSE(Server-Sent Events) 기반 실시간 스트리밍 응답 구현
+
 ### 🏗️ Full Stack 개발 (AI 서비스 특화)
 **마이크로서비스 아키텍처 설계 및 구현**
-- Django + FastAPI + MySQL 통합 구조
+- Django + FastAPI + PostgreSQL/MySQL 통합 구조
 - Docker Compose 기반 컨테이너 오케스트레이션
 - RESTful API 설계 및 엔드포인트 개발
 - 바닐라 JavaScript로 동적 UI 구현 (캘린더, 채팅 인터페이스)
 
-### ⚡ LLM 프롬프트 엔지니어링 & 최적화
-**AI 평가 일관성 ±5점 → ±2점 개선**
-- Few-shot Learning 및 Temperature 파라미터 최적화
-- LLM 성능 비교 분석 (GPT-4o-mini, GPT-4, Claude)
-- Hallucination 감지 및 신뢰도 검증 시스템 구축
-- 동일 입력 반복 테스트 → Cosine Similarity 기반 필터링
+### ⚡ LLM 평가 & 프롬프트 엔지니어링
+**플랫폼 전 모듈(5개 기능) LLM 성능 평가 총괄**
+- 기능별 최적 모델 선정 (gpt-4o / gpt-4o-mini / gpt-5-mini 역할 분담)
+- Few-shot Learning + Temperature 최적화로 평가 일관성 ±5점 → ±2점 개선
+- Hallucination 감지 시스템: 동일 입력 반복 테스트 + Cosine Similarity 기반 필터링
+- 3-Tier 루브릭 설계로 AI 평가 기준 정량화 (점수별 구체적 기준 명시)
 
 ---
 
