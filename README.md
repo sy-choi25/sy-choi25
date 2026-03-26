@@ -4,8 +4,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E3192,100:1BFFFF&height=200&section=header&text=Hi%20There!%20I'm%20최소영%20&fontSize=50&fontAlignY=35&animation=twinkling&fontColor=fff" />
 
 <!-- Typing SVG -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&color=2a5298&center=true&vCenter=true&lines=AI+Engineer;LLM+%26+RAG+Developer;Multimodal+AI+Builder;Full+Stack+Developer" alt="Typing SVG" /></a>
-
 <br/>
 
 <!-- Profile Views Counter -->
@@ -30,15 +28,6 @@
 - RAG Systems & Embedding-based Semantic Search
 - Full Stack Development (Vue.js + Django + FastAPI)
 - Production-Ready AI Solutions
-
-**🎯 Philosophy**: "Every expert was once a beginner"
-
-**💬 Ask Me About**: RAG | LangChain | LLM Evaluation | Prompt Engineering | Multimodal AI | Vue.js | Django | FastAPI | Embedding Search | Career Transition
-
-**🌱 Fun Fact**:
-AI가 분석한 최소영님은 **실행력이 강한 학습자**입니다.
-비전공자에서 시작해 6개월 만에 Production-Ready AI 프로젝트를 완성했고, 385+ 커밋으로 꾸준히 성장하며,
-RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, STT/TTS/Vision 멀티모달 파이프라인 구축, 플랫폼 전 모듈 LLM 성능 평가까지 **AI 시스템 설계부터 평가까지 전 과정을 책임지는 개발자**입니다. 팀 프로젝트에서 Backend, AI 시스템, DB 설계, Infrastructure까지 Full Stack으로 구현하며 전체 파이프라인을 혼자 완성하는 **올라운더 AI 개발자**입니다.
 
 </div>
 
@@ -89,11 +78,13 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 <div align="center">
 
-## 🚀 Featured Projects 🚀
+##  Featured Projects 
 
 </div>
 
 ### 🎮 [AI-ARCADE](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN20-FINAL-5TEAM) - AI 엔지니어 교육 플랫폼
+
+🔗 [View Repository](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN20-FINAL-5TEAM)
 
 **역할**: Backend Developer & AI Evaluation System Developer
 
@@ -102,19 +93,18 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 **핵심 기술**: `Vue.js` `Django` `PostgreSQL` `GPT-4o` `GPT-4o-mini` `text-embedding-3-small` `faster-whisper` `Docker`
 
 **주요 기능**:
-- 🧠 **Pseudo Practice**: AI 기반 5차원 역량 평가 (정합성, 추상화, 예외처리, 구현력, 설계력)
-- 🐛 **Bug Hunt**: 4단계 디버깅 사고력 평가 시스템 (Docker 샌드박스 
-- 🏗️ **System Architecture**: 실시간 아키텍처 설계 & Deep Dive 면접
-+ 심층 인터뷰 + 루브릭 채점)
-- 💼 **Job Planner**: 채용공고 파싱 → 스킬 갭 분석 → 맞춤 면접 계획 자동 생성
-- 🎙️ **Interview**: 4-Layer AI 면접 엔진 (증거 추출 → 상태 관리 → 적응형 질문 → 면접 설계)
+-  **Pseudo Practice**: AI 기반 5차원 역량 평가 (정합성, 추상화, 예외처리, 구현력, 설계력)
+-  **Bug Hunt**: 4단계 디버깅 사고력 평가 시스템 (Docker 샌드박스 
+-  **System Architecture**: 실시간 아키텍처 설계 & Deep Dive 면접
+-  **Job Planner**: 채용공고 파싱 → 스킬 갭 분석 → 맞춤 면접 계획 자동 생성
+-  **Interview**: 4-Layer AI 면접 엔진 (증거 추출 → 상태 관리 → 적응형 질문 → 면접 설계)
 
 <details>
 <summary><b>📌 작업 내용</b></summary>
 
 ---
 
-#### 🐛 Bug Hunt 시스템 전체 개발
+####  Bug Hunt 시스템 개발
 - 실무 디버깅 시나리오 설계 (Data Leakage, Label Imbalance, Overfitting, Off-by-one Error, Gradient 누적 등)
 - 4단계 순차 평가 파이프라인 구축
   - Stage 1: Docker 샌드박스에서 수정 코드 동작 정확성 검증
@@ -126,7 +116,7 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 ---
 
-#### 💼 Job Planner 시스템 전체 개발
+####  Job Planner 시스템 전체 개발
 - 채용공고 3가지 입력 소스 파싱 구현
   - URL: BeautifulSoup 웹 크롤링
   - 이미지: GPT-4o Vision(OCR) 텍스트 추출
@@ -139,7 +129,7 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 ---
 
-#### 🎙️ Mock Interview 시스템 전체 개발
+####  Mock Interview 시스템 개발
 - 4-Layer AI 면접 엔진 설계 및 구현
 
   | Layer | 모듈 | 역할 |
@@ -155,7 +145,7 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 ---
 
-#### 🤖 전 모듈 LLM 성능 평가
+####  전 모듈 LLM 성능 평가
 - 플랫폼 전체 기능(Bug Hunt, Job Planner, Mock Interview, Pseudo Practice, System Architecture)에 사용되는 모든 LLM 모델 성능 비교 분석
 - LLM 신뢰도 검증 시스템 구축
   - 평가 일관성 테스트 (동일 입력 → 유사 출력 검증)
@@ -171,7 +161,6 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 - ✅ Job Planner 3-source 파싱 + 스킬 임베딩 매칭 시스템 구축
 - ✅ Mock Interview 4-Layer 엔진 + 멀티모달(STT/TTS/Vision) 파이프라인 완성
 - ✅ 전 모듈 LLM 평가 — 평가 일관성 ±5점 → ±2점 개선
-- ✅ 227 Commits 기여
 
 **내가 해결한 문제**:
 ```python
@@ -207,6 +196,8 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 ### 🤖 [Boss Baby AI](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN20-4th-4TEAM) - 창업 지원 통합 플랫폼
 
+🔗 [View Repository](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN20-4th-4TEAM)
+
 **역할**: Full Stack Developer (Backend + Frontend + RAG System)
 
 > RAG 기반 창업 정보 제공 + AI 사업계획서 분석 + 일정 관리 통합 플랫폼  
@@ -215,17 +206,17 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 **핵심 기술**: `Django` `FastAPI` `LangChain` `ChromaDB` `MySQL` `GPT-4o-mini` `Tavily` `HTML/CSS/JavaScript`
 
 **주요 기능**:
-- 📚 **15,510개 문서 RAG**: 지원사업, 법령, 공간, 사례, 통계 통합 검색
-- 📊 **AI 사업계획서 분석**: 20년 경력 벤처투자 전문가 페르소나 기반 8개 섹션 분석
-- 📅 **일정 관리 시스템**: AI 자동 일정 추출 + D-Day 캘린더
-- 🌐 **3-Way Branching**: 내부 RAG → 웹 검색 (Tavily) → AI Fallback
+-  **15,510개 문서 RAG**: 지원사업, 법령, 공간, 사례, 통계 통합 검색
+-  **AI 사업계획서 분석**: 20년 경력 벤처투자 전문가 페르소나 기반 8개 섹션 분석
+-  **일정 관리 시스템**: AI 자동 일정 추출 + D-Day 캘린더
+-  **3-Way Branching**: 내부 RAG → 웹 검색 (Tavily) → AI Fallback
 
 <details>
 <summary><b>📌 작업 내용</b></summary>
 
 ---
 
-#### 🔍 RAG 파이프라인 구축 (6단계)
+####  RAG 파이프라인 구축 (6단계)
 - 7가지 데이터 타입 통합 벡터화 (announcement, stat, space, law, cases, program, ip_manual)
 - **문서 타입별 최적 청킹 전략 설계** → 검색 정확도 +32% 향상
 
@@ -249,7 +240,7 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 ---
 
-#### ⚙️ Backend 개발 (Django + FastAPI)
+####  Backend 개발 (Django + FastAPI)
 - Django 프로젝트 구조 설계 및 앱 생성
 - Django ORM 모델 구현 (users / chat_sessions / chat_log / calendar_events / business_plans)
   - chat_log에 source_type 컬럼 설계 (RAG / 웹 검색 / AI Fallback 소스 추적)
@@ -260,7 +251,7 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 ---
 
-#### 🎨 Frontend 개발 (Django Templates + Vanilla JS)
+####  Frontend 개발 (Django Templates + Vanilla JS)
 - **월간 캘린더 시스템 전체 구현**
   - 42칸 그리드 레이아웃 (6주 표시)
   - D-Day 자동 계산 및 색상 시각화
@@ -270,7 +261,7 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 ---
 
-#### 🐳 Infrastructure & DevOps
+####  Infrastructure & DevOps
 - Docker Compose 설정 파일 작성
   - Django (8001), FastAPI (8000), MySQL (3306) 컨테이너 구성
   - 네트워크 설정 및 볼륨 마운트
@@ -278,7 +269,7 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 ---
 
-#### 📊 데이터 수집 및 전처리
+####  데이터 수집 및 전처리
 - K-Startup API 데이터 수집 스크립트 작성
 - PDF 문서 파싱 (PyMuPDF)
 
@@ -289,7 +280,6 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 - ✅ 평균 응답 시간 4.42초 (목표 5초 이내)
 - ✅ Multi-Query로 재현율 30% 향상
 - ✅ 100% 커버리지 보장 (내부 RAG + 웹 검색 + AI Fallback)
-- ✅ 158 Commits 기여 (4th: 51 + 3rd: 107)
 
 **내가 해결한 문제**:
 ```python
@@ -338,35 +328,35 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 </div>
 
-### 🎯 Production-Ready RAG 시스템 구축 경험
+###  Production-Ready RAG 시스템 구축 경험
 **검색 정확도 92.8% 달성** (Query Transformation + Multi-Query 기법 적용)
 - 15,510개 문서 벡터화 및 ChromaDB 구축
 - 문서 타입별 최적 청킹 전략 설계 (정확도 +32% 향상)
 - 3-Way Fallback으로 100% 응답률 보장 (RAG → Web Search → AI)
 - Multi-Query를 통한 검색 재현율 30% 개선
 
-### 🔍 임베딩 기반 시맨틱 검색 & 스킬 매칭
+###  임베딩 기반 시맨틱 검색 & 스킬 매칭
 **키워드 매칭의 한계를 벡터 검색으로 극복**
 - text-embedding-3-small 기반 스킬 임베딩 파이프라인 구축
 - L2 정규화 + 코사인 유사도로 표현 다양성 대응 (예: "LangChain" ↔ "LLM 파이프라인")
 - readiness_score(0~1.0) 산출 → 상태 기반 Action 추천 시스템 설계
 - 채용공고 required_skills → 면접 슬롯 동적 생성으로 시스템 간 데이터 연계
 
-### 🎙️ 멀티모달 AI 파이프라인 구축
+###  멀티모달 AI 파이프라인 구축
 **텍스트를 넘어 음성·영상까지 처리하는 AI 인터뷰 시스템**
 - STT: faster-whisper 기반 실시간 음성 인식 파이프라인
 - TTS: alloy/nova/onyx/shimmer 다중 보이스 지원
 - Vision: 비언어적 표현(표정, 자세) 분석으로 면접 평가 보완
 - SSE(Server-Sent Events) 기반 실시간 스트리밍 응답 구현
 
-### 🏗️ Full Stack 개발 (AI 서비스 특화)
+###  Full Stack 개발 (AI 서비스 특화)
 **마이크로서비스 아키텍처 설계 및 구현**
 - Django + FastAPI + PostgreSQL/MySQL 통합 구조
 - Docker Compose 기반 컨테이너 오케스트레이션
 - RESTful API 설계 및 엔드포인트 개발
 - 바닐라 JavaScript로 동적 UI 구현 (캘린더, 채팅 인터페이스)
 
-### ⚡ LLM 평가 & 프롬프트 엔지니어링
+###  LLM 평가 & 프롬프트 엔지니어링
 **플랫폼 전 모듈(5개 기능) LLM 성능 평가 총괄**
 - 기능별 최적 모델 선정 (gpt-4o / gpt-4o-mini / gpt-5-mini 역할 분담)
 - Few-shot Learning + Temperature 최적화로 평가 일관성 ±5점 → ±2점 개선
@@ -449,7 +439,7 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 **실습 프로젝트**:
 - 챗봇 구현
 - RAG 시스템 구축
-- **→ 3개의 Production-Ready 프로젝트로 이어짐!**
+- **→ 3개의 Production-Ready 프로젝트로 이어짐**
 </details>
 
 <details>
@@ -490,6 +480,5 @@ RAG 시스템 검색 정확도 92.8% 달성, 4-Layer AI 면접 엔진 설계, ST
 
 **⭐️ From [sy-choi25](https://github.com/sy-choi25) | Building the future with AI! 🚀**
 
-*이 프로필은 실제 GitHub 커밋 히스토리와 프로젝트 README를 분석하여 작성되었습니다.*
 
 </div>
